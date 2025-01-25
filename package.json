@@ -2,12 +2,15 @@
   "name": "touchstonewebsitesample",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://reshzy.github.io/TouchstoneTest/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +25,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.474.0",
     "next": "^14.1.0",
     "postcss": "^8.5.1",
